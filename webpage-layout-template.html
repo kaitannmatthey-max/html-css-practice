@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Webpage Layout Template</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            gap: 10px;
+        }
+
+        header {
+            background-color: red; 
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            background-color: green;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex: 5;
+            gap: 10px;
+        }
+
+        aside {
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container > aside {
+            flex: 1;
+        }
+
+        main {
+            background-color: lightblue;
+            display: flex;
+            justify-content: top;
+            align-items: center;
+            padding: 10px 30px 30px 30px;
+            gap: 20px;
+        }
+
+        main > p {
+            background-color: inherit;
+            flex: 0;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .flex-container > main {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+        }
+
+        article {
+            background-color: lightskyblue;
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            width: 100%;
+        }
+
+        figure {
+            background-color: lightsalmon;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+        }
+
+        article > p {
+            background-color: yellow;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+        }
+
+        section {
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            width: 100%;
+        }
+
+        footer {
+            background-color: purple;
+            text-align: center;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            Header
+        </header>
+        <nav>
+            Nav
+        </nav>
+        
+            <div class="flex-container">
+                <aside>
+                    Aside
+                </aside>
+                <main>
+                    <p>Main</p>
+                    <article>
+                        Article
+                        <figure>
+                            Figure
+                        </figure>
+                        <p>
+                            P
+                        </p>
+                    </article>
+                    <section>
+                        Section
+                    </section>
+                </main>
+            </div>
+        
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+</html>
